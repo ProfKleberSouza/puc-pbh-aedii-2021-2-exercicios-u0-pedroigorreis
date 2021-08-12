@@ -1,8 +1,31 @@
+// +-------------------------------+----------------+
+// | U0 - Nivelamento - Exercícios | @pedroigorreis |
+// +-------------------------------+----------------+
+
+// Bibliotecas
 #include <stdio.h>
 
-int main() {
-   int n1, n2;
-   scanf("%i %i", &n1, &n2);
-   printf("SOMA = %i\n", n1+n2);
-   return 0;
+int main (void)
+{
+	// Variáveis
+	int a;
+	int b;
+	int c;
+	int d;
+	
+	float media;
+	
+	// Leitura
+	scanf("%d %d %d %d",&a,&b,&c,&d);
+	
+	// Processamento e saída de dados
+	media = (a+b+c+d)/4;
+	if(media >= 6)
+	{
+		printf("NOTA = %f (APROVADO)\n");
+	}
+	else
+	{
+		printf("NOTA = %f (REPROVADO)\n");
+	}
 }
