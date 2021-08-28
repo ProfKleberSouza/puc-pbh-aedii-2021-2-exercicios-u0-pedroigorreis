@@ -32,7 +32,7 @@ int main (void)
   float media = 0;
   for(int i = 0; i < N; i++)
   {
-    soma = notas[i] + soma;
+    soma += notas[i];
   }
   media = (soma)/N;
 
@@ -40,8 +40,14 @@ int main (void)
   printf("NOTA MEDIA = %.1f\n", media);
 
   // Ordenar alafabeticamente
+  int maior_1 = 0;
+  int maior_2 = 0;
+  int maior_3 = 0;
+
   for(i = 0; i < N; i++)
   {
-    printf("%s %1.f\n",nomes[i],notas[i]);
+    if()
   }
+
+  printf("%s %1.f\n",nomes[i],notas[i]);
 }

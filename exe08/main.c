@@ -5,6 +5,7 @@
 
 // Bibliotecas
 #include <stdio.h>
+#include <stdlib.h>
 
 // Main
 int main (void)
@@ -22,8 +23,8 @@ int main (void)
 		}
 		else if (x == 0)
 		{
-			exit(0);
-		}
+      exit(1);		
+    }
 		else
 		{
 			printf("NEGATIVO\n");

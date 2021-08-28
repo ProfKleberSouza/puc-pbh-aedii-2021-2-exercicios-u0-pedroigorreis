@@ -5,27 +5,6 @@
 // Bibliotecas
 #include <stdio.h>
 
-// Ordenação inversa
-void bubbleSort(int vetor[], int n)
-{
-	int k;
-	int j;
-	int aux;
-	
-	for(k = 1; k < n; k++)
-	{
-		for(j = 0; j < n - 1;j++)
-		{
-			if(vetor[j] < vetor[j+1])
-			{
-				aux = vetor[j];
-                vetor[j] = vetor[j + 1];
-                vetor[j + 1] = aux;
-			}
-		}
-	}
-}
-
 // Main
 int main (void)
 {
@@ -38,15 +17,12 @@ int main (void)
 		scanf("%d", &n[i]);
 	}
 	
-	// Ordenação inversa
-	bubbleSort(n, 10);
-	
 	// Impressão
-	for(int i = 0; i < 10; i++)
+	for(int i = 9; i > 0; i--)
 	{
 		printf("%d\n", n[i]);
 	}
-	
+
 	// Fim
 	return 0;
 }

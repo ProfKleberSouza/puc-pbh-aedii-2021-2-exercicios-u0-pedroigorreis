@@ -11,12 +11,12 @@ int main (void)
 	// Variáveis
 	int menor = 0;
 	int maior = 0;
-	int vetor* = (int*)malloc(sizeof(int)*3);
+	int vetor[3];
 	
 	// Entrada
 	for(int i = 0; i < 3; i++)
 	{
-		scanf("%d", vetor[i]);
+		scanf("%d", &vetor[i]);
 		if(i == 0)
 		{
 			maior = vetor[i];
@@ -37,6 +37,6 @@ int main (void)
 	}
 	
 	// Saída
-	printf("MAIOR = %d", &maior);
-	printf("MENOR = %d", &menor);
+	printf("MAIOR = %d\n", maior);
+	printf("MENOR = %d\n", menor);
 }

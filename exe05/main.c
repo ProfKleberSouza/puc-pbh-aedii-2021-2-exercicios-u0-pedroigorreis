@@ -22,10 +22,10 @@ int main (void)
 	media = (a+b+c+d)/4;
 	if(media >= 6)
 	{
-		printf("NOTA = %f (APROVADO)\n");
+		printf("NOTA = %f (APROVADO)\n", media);
 	}
 	else
 	{
-		printf("NOTA = %f (REPROVADO)\n");
+		printf("NOTA = %1.f (REPROVADO)\n", media);
 	}
 }
